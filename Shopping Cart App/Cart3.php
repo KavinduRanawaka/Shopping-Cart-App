@@ -4,6 +4,7 @@ $db_name = "shopping";
 $connection = mysqli_connect("localhost", "root", "", $db_name);
 
 if (isset($_POST["add"])) {
+    
     if (isset($_SESSION["shopping_cart"])) {
         $item_array_id = array_column($_SESSION["shopping_cart"], "product_id");
         if (!in_array($_GET["id"], $item_array_id)) {
