@@ -20,7 +20,7 @@ if (!isset($_SESSION['valid'])) {
     <style>
         body,
         html {
-           
+            margin: 0;
             padding: 0;
             height: 100%;
             overflow: hidden;
